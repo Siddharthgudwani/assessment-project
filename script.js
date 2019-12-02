@@ -9,7 +9,7 @@ function getRecipes(query) {
     $.ajax({
         url: `${host}/search?app_id=${appId}&app_key=${apiKey}&q=${query}`,
         success: function (result) {
-            perloadfunction();
+            // perloadfunction();
             console.log(result);
             index = 0;
             data = result;
@@ -18,11 +18,11 @@ function getRecipes(query) {
     });
 }
 
-function perloadfunction() {
-    var load = document.getElementById('loading');
-    loading.style.display = 'none';
+// function perloadfunction() {
+//     var load = document.getElementById('loading');
+//     loading.style.display = 'none';
 
-}
+// }
 
 function kFormatter(num) {
     return Math.abs(num) > 999 ?
@@ -67,7 +67,13 @@ function getNutrientsAnalysis(data) {
         }
     });
 }
+function cleandata()
+{
+    document.getElementById("recipes").innerHTML="";
+    document.getElementById("recipes").style="";
+    document.getElementById("search-input").value="";
 
+}
 function loadAnalysis(result) {
     $("#nutri-analysis").empty();
     let rowData = "";

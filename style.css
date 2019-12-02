@@ -24,6 +24,7 @@ body {
   background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0)),url('./food.gif') ;
   background-size: 100% 285%;
   background-repeat: no-repeat;
+ 
 }
 .text-center{
   margin-top:1%;
@@ -142,7 +143,7 @@ border-bottom: 2px solid #ffff66; }
 
 .navbar-nav {
   text-align: center;
-  padding-left:900px;
+  padding-left:1000px;
 }
 
 .navbar-toggler {
@@ -482,5 +483,10 @@ text-align:center;
 
 #serchss{
   padding-top:20px;
+ 
+}
+#serchss #search-button
+{
+  background-color: yellow;
 }
 /* <!-- change --> */

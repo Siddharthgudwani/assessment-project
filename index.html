@@ -12,7 +12,7 @@
 
  <body onload='getRecipes(" ");openForm()'>
 
-    <div id="loading"></div>
+    <!-- <div id="loading"></div> -->
 
     <nav class="navbar navbar-expand-md bg-dark fixed-top navbar-dark">
       <a href="#"><img src="pic1.jpg" class="logo"></a>
@@ -45,14 +45,18 @@
                     </div>
                   </li>
             </ul>
-        </div>
-        <div class="form-inline">
+         </div>
+       <!-- <div class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
                 id="search-input">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-button">Search</button>
-         </div>
+         </div> -->
     </nav>
-
+<!-- <div class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+        id="search-input">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-button">Search</button>
+ </div> -->
     <div class="main-content-header">
         <h1> Welcome To <span class="colorchange">Recipes</span><br>
             -Search Your Favourite Recipes <BR> Right Now  !!</h1>
@@ -75,12 +79,14 @@
         </ul>
         
     </div>
-    
-    <!-- <div class="form-inline" id="serchss">
+    <div class="form-inline" id="serchss">
+        <br><br><br><br><br><br><br>
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
             id="search-input">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-button">Search</button>
-    </div> -->
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-button">Search</button>
+         <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="search-button" onclick="cleandata()">  X  </button>
+
+    </div>
 
     <div id="recipes"></div>
 
@@ -212,12 +218,14 @@
     </footer>
     
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1min.js"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <script src="./script.js"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 //  $(document).ready(function(){
 //  // myFunction();

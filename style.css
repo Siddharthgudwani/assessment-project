@@ -75,7 +75,7 @@ body {
 }
 
 .colorchange{
-	animation:  colorchangethapa 1s infinite;
+	animation:  colorchangethapa 5s infinite;
           
 
         
@@ -83,7 +83,7 @@ body {
 @keyframes colorchangethapa{
 	0%{color: red;}
 	25%{color:#66ff66; ;}
-	50%{ color:black; }
+	50%{ color:cyan; }
 	100%{ color:#ffff66;  }
 }
 /* ^ front page content ^ */
